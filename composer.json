@@ -1,7 +1,7 @@
 {
-    "name": "umi-top/umi-core-php",
+    "name": "elcorp/umi-fork",
     "type": "library",
-    "description": "UMI Core PHP Library",
+    "description": "UMI Core PHP Library fork",
     "homepage": "https://umi.top",
     "license": "MIT",
     "keywords": [
