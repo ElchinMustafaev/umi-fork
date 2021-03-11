@@ -1,0 +1,44 @@
+{
+    "name": "umi-top/umi-core-php",
+    "type": "library",
+    "description": "UMI Core PHP Library",
+    "homepage": "https://umi.top",
+    "license": "MIT",
+    "keywords": [
+        "UMI",
+        "umi.top"
+    ],
+    "authors": [
+        {
+            "name": "UMI",
+            "email": "dev@umi.top"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "UmiTop\\UmiCore\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "php-64bit": ">=7.1",
+        "ext-hash": "*"
+    },
+    "suggest": {
+        "ext-sodium": "*"
+    },
+    "scripts": {
+        "test": "phpunit --testdox",
+        "coverage": "phpunit --coverage-html coverage",
+        "psalm": "psalm --no-cache --show-info=true",
+        "phpstan": "phpstan analyse",
+        "phpcs": "phpcs",
+        "phpmd": "phpmd ./src text cleancode,codesize,controversial,design,naming,unusedcode",
+        "phpmd2": "phpmd ./tests text cleancode,codesize,controversial,design,naming,unusedcode",
+        "lint": ["@phpmd", "@phpmd2", "@phpcs", "@psalm", "@phpstan"]
+    },
+    "archive": {
+        "exclude": ["*", "!LICENSE", "!README.md", "!composer.json", "!src"]
+    }
+}
